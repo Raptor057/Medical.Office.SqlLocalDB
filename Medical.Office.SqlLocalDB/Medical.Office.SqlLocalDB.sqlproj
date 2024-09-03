@@ -68,9 +68,7 @@
   <ItemGroup>
     <Build Include="ConfigurationTables\MedicalOffice\Gender.sql" />
     <Build Include="ConfigurationTables\MedicalOffice\OfficeSetup.sql" />
-    <Build Include="ConfigurationTables\MedicalOffice\PaymentMethods.sql" />
     <Build Include="ConfigurationTables\MedicalOffice\Positions.sql" />
-    <Build Include="ConfigurationTables\MedicalOffice\QuoteStatus.sql" />
     <Build Include="ConfigurationTables\MedicalOffice\Roles.sql" />
     <Build Include="ConfigurationTables\MedicalOffice\Specialties.sql" />
     <Build Include="ConfigurationTables\MedicalOffice\TypeOfAppointment.sql" />
@@ -90,5 +88,11 @@
     <Build Include="ConfigurationTables\POS\Sales.sql" />
     <Build Include="ConfigurationTables\POS\SalesPromotions.sql" />
     <Build Include="ConfigurationTables\POS\SaleStatuses.sql" />
+    <Build Include="ConfigurationTables\POS\PaymentMethods.sql" />
+    <Build Include="ConfigurationTables\POS\QuoteStatus.sql" />
+    <Build Include="ConfigurationTables\MedicalOffice\PatientData.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="Medical.Office.SqlLocalDB.refactorlog" />
   </ItemGroup>
 </Project>

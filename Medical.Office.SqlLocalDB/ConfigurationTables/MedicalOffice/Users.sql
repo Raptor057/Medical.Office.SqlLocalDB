@@ -6,7 +6,7 @@
     [Name] VARCHAR(50) NOT NULL, 
     [Lastname] VARCHAR(50) NOT NULL, 
     [Role] VARCHAR(50) NOT NULL, 
-    [Position] VARCHAR(MAX) NOT NULL, 
+    [Position] VARCHAR(255) NOT NULL, 
     [Status] VARCHAR(50) NOT NULL, 
     [Specialtie] VARCHAR(50) NOT NULL, 
     [TimeSnap] DATETIME NOT NULL DEFAULT GETDATE(), 
