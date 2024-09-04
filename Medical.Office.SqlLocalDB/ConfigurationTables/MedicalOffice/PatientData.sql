@@ -1,11 +1,11 @@
 ﻿CREATE TABLE [dbo].[PatientData]
 (
-	[ID] INT NOT NULL, 
+	[ID] BIGINT NOT NULL, 
     [Name] VARCHAR(255) NOT NULL, 
     [FathersSurname] VARCHAR(255) NULL, 
     [MothersSurname] VARCHAR(255) NULL, 
     [DateOfBirth ] DATE NOT NULL, 
-    [Gender ] VARCHAR(10) NULL, 
+    [Gender ] NCHAR(10) NULL, 
     [Address] VARCHAR(MAX) NULL,
     [Country] VARCHAR(50) NULL, 
     [City] VARCHAR(50) NULL, 
@@ -21,8 +21,9 @@
     [PolicyNumber ] VARCHAR(50) NULL, 
     [BloodType ] VARCHAR(50) NULL, 
     [DateCreated ] DATETIME NULL DEFAULT GetDate(), 
-    [LastUpdated ] DATETIME NULL, 
+    [LastUpdated ] DATETIME NULL DEFAULT GetDate(), 
     [Photo] VARCHAR(MAX) NULL, 
 
+    [InternalNotes] VARCHAR(MAX) NULL, 
     CONSTRAINT [PK_PatientData] PRIMARY KEY ([ID]) 
 )

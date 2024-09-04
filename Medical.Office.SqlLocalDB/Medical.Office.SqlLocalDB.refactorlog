@@ -14,4 +14,18 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="OutsideNumber" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="7a5f721c-ab7e-4031-a281-8acc9ff07eac" ChangeDateTime="09/04/2024 02:21:08">
+    <Property Name="ElementName" Value="[dbo].[PatientAllergies].[Datetimesnap]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[PatientAllergies]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="DateTimeSnap" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="78431f38-15cf-426e-b94d-4797d0a851cb" ChangeDateTime="09/04/2024 03:22:19">
+    <Property Name="ElementName" Value="[dbo].[MedicalAppointmentCalendar].[IDoctor]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[MedicalAppointmentCalendar]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="IDDoctor" />
+  </Operation>
 </Operations>

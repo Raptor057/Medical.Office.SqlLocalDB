@@ -64,6 +64,7 @@
     <Folder Include="ProductionTables\MedicalOffice" />
     <Folder Include="ProductionTables\Views" />
     <Folder Include="ProductionTables\POS" />
+    <Folder Include="ConfigurationTables\MedicalOffice\AntecedentPatient" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="ConfigurationTables\MedicalOffice\Gender.sql" />
@@ -91,6 +92,15 @@
     <Build Include="ConfigurationTables\POS\PaymentMethods.sql" />
     <Build Include="ConfigurationTables\POS\QuoteStatus.sql" />
     <Build Include="ConfigurationTables\MedicalOffice\PatientData.sql" />
+    <Build Include="ConfigurationTables\MedicalOffice\AntecedentPatient\PatientAllergies.sql" />
+    <Build Include="ConfigurationTables\MedicalOffice\AntecedentPatient\PathologicalBackground.sql" />
+    <Build Include="ConfigurationTables\MedicalOffice\AntecedentPatient\NonPathologicalHistory.sql" />
+    <Build Include="ConfigurationTables\MedicalOffice\AntecedentPatient\FamilyHistory.sql" />
+    <Build Include="ConfigurationTables\MedicalOffice\AntecedentPatient\PsychiatricHistory.sql" />
+    <Build Include="ConfigurationTables\MedicalOffice\AntecedentPatient\ActiveMedications.sql" />
+    <Build Include="ConfigurationTables\MedicalOffice\AntecedentPatient\MedicalHistoryNotes.sql" />
+    <Build Include="ConfigurationTables\MedicalOffice\MedicalAppointmentCalendar.sql" />
+    <Build Include="ConfigurationTables\MedicalOffice\Doctors.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="Medical.Office.SqlLocalDB.refactorlog" />

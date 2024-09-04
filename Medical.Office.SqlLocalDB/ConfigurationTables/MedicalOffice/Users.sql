@@ -8,7 +8,7 @@
     [Role] VARCHAR(50) NOT NULL, 
     [Position] VARCHAR(255) NOT NULL, 
     [Status] VARCHAR(50) NOT NULL, 
-    [Specialtie] VARCHAR(50) NOT NULL, 
+    [Specialtie] VARCHAR(100) NOT NULL, 
     [TimeSnap] DATETIME NOT NULL DEFAULT GETDATE(), 
     CONSTRAINT [FK_Users_ToRoles] FOREIGN KEY ([Role]) REFERENCES [Roles]([RolesName]),
     CONSTRAINT [FK_Users_ToPositions] FOREIGN KEY ([Position]) REFERENCES [Positions]([PositionName]), 
