@@ -8,7 +8,9 @@
     AppointmentStatus VARCHAR(50) NOT NULL, -- Estado de la cita (ej. "Scheduled", "Completed", "Cancelled")
     Notes VARCHAR(MAX), -- Notas adicionales
     CreatedAt DATETIME DEFAULT GETDATE(), -- Fecha de creación de la cita
-    UpdatedAt DATETIME DEFAULT GETDATE(), -- Fecha de la última actualización
+    UpdatedAt DATETIME DEFAULT GETDATE(), [TypeOfAppointment] VARCHAR(50) NULL, 
+    -- Fecha de la última actualización
     CONSTRAINT [FK_MedicalAppointmentCalendar_ToPatientData] FOREIGN KEY ([IDPatient]) REFERENCES [PatientData]([ID]), 
     CONSTRAINT [FK_MedicalAppointmentCalendar_ToDoctors] FOREIGN KEY ([IDDoctor]) REFERENCES [Doctors]([ID]), 
+    CONSTRAINT [FK_MedicalAppointmentCalendar_ToTypeOfAppointment] FOREIGN KEY ([TypeOfAppointment]) REFERENCES [TypeOfAppointment]([NameTypeOfAppointment]), 
 )

@@ -5,5 +5,5 @@
     Quantity INT NOT NULL, -- EN: Quantity of products affected by the movement | ES: Cantidad de productos afectados por el movimiento
     MovementDate DATETIME NOT NULL DEFAULT GETDATE(), -- EN: Date of the movement | ES: Fecha del movimiento
     Description NVARCHAR(255), -- EN: Description or reason for the movement (e.g., Sale, Inventory Adjustment) | ES: Descripción o motivo del movimiento (por ejemplo, Venta, Ajuste de inventario)
-    FOREIGN KEY (ProductId) REFERENCES Products(ProductId)
+    CONSTRAINT [FK_InventoryMovements_ToProducts] FOREIGN KEY (ProductId) REFERENCES Products(ProductId)
 );

@@ -13,5 +13,5 @@
     CONSTRAINT [FK_Users_ToRoles] FOREIGN KEY ([Role]) REFERENCES [Roles]([RolesName]),
     CONSTRAINT [FK_Users_ToPositions] FOREIGN KEY ([Position]) REFERENCES [Positions]([PositionName]), 
     CONSTRAINT [FK_Users_ToUserStatuses] FOREIGN KEY ([Status]) REFERENCES [UserStatuses]([TypeUserStatuses]), 
-    CONSTRAINT [FK_Users_ToSpecialties] FOREIGN KEY ([Specialtie]) REFERENCES [Specialties]([NameSpecialty])
+    CONSTRAINT [FK_Users_ToSpecialties] FOREIGN KEY ([Specialtie]) REFERENCES [Specialties]([Specialty])
 )

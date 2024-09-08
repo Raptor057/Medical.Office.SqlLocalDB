@@ -65,6 +65,7 @@
     <Folder Include="ProductionTables\Views" />
     <Folder Include="ProductionTables\POS" />
     <Folder Include="ConfigurationTables\MedicalOffice\AntecedentPatient" />
+    <Folder Include="ConfigurationTables\POS\CashRegister" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="ConfigurationTables\MedicalOffice\Gender.sql" />
@@ -75,8 +76,6 @@
     <Build Include="ConfigurationTables\MedicalOffice\TypeOfAppointment.sql" />
     <Build Include="ConfigurationTables\MedicalOffice\Users.sql" />
     <Build Include="ConfigurationTables\MedicalOffice\UserStatuses.sql" />
-    <Build Include="ConfigurationTables\POS\CashMovements.sql" />
-    <Build Include="ConfigurationTables\POS\CashRegisters.sql" />
     <Build Include="ConfigurationTables\POS\InventoryMovements.sql" />
     <Build Include="ConfigurationTables\POS\PaymentTypes.sql" />
     <Build Include="ConfigurationTables\POS\ProductCategories.sql" />
@@ -89,8 +88,6 @@
     <Build Include="ConfigurationTables\POS\Sales.sql" />
     <Build Include="ConfigurationTables\POS\SalesPromotions.sql" />
     <Build Include="ConfigurationTables\POS\SaleStatuses.sql" />
-    <Build Include="ConfigurationTables\POS\PaymentMethods.sql" />
-    <Build Include="ConfigurationTables\POS\QuoteStatus.sql" />
     <Build Include="ConfigurationTables\MedicalOffice\PatientData.sql" />
     <Build Include="ConfigurationTables\MedicalOffice\AntecedentPatient\PatientAllergies.sql" />
     <Build Include="ConfigurationTables\MedicalOffice\AntecedentPatient\PathologicalBackground.sql" />
@@ -101,6 +98,8 @@
     <Build Include="ConfigurationTables\MedicalOffice\AntecedentPatient\MedicalHistoryNotes.sql" />
     <Build Include="ConfigurationTables\MedicalOffice\MedicalAppointmentCalendar.sql" />
     <Build Include="ConfigurationTables\MedicalOffice\Doctors.sql" />
+    <Build Include="ConfigurationTables\POS\CashRegister\CashMovements.sql" />
+    <Build Include="ConfigurationTables\POS\CashRegister\CashRegisters.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="Medical.Office.SqlLocalDB.refactorlog" />

@@ -5,6 +5,6 @@
     Quantity INT NOT NULL, -- EN: Quantity returned | ES: Cantidad devuelta
     UnitPrice DECIMAL(18,2) NOT NULL, -- EN: Unit price of the returned product | ES: Precio unitario del producto devuelto
     Subtotal DECIMAL(18,2) NOT NULL, -- EN: Subtotal calculated as (Quantity * UnitPrice) | ES: Subtotal calculado (Cantidad * Precio unitario)
-    FOREIGN KEY (ReturnId) REFERENCES ReturnsProducts(ReturnId),
-    FOREIGN KEY (ProductId) REFERENCES Products(ProductId)
+    CONSTRAINT [FK_ReturnDetails_ToReturnProducts] FOREIGN KEY (ReturnId) REFERENCES ReturnsProducts(ReturnId),
+    CONSTRAINT [FK_ReturnDetails_ToProducts] FOREIGN KEY (ProductId) REFERENCES Products(ProductId)
 );

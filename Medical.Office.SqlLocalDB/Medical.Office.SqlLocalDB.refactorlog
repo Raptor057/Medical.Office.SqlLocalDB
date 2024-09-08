@@ -28,4 +28,67 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="IDDoctor" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="0c8dfd1e-3a0b-4328-b652-d26f7c110e5c" ChangeDateTime="09/07/2024 08:57:06">
+    <Property Name="ElementName" Value="[dbo].[PatientData].[Gender ]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[PatientData]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Gender" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="24a22829-e980-4a2f-9326-cfc78be8c57a" ChangeDateTime="09/07/2024 09:01:32">
+    <Property Name="ElementName" Value="[dbo].[Specialties].[NameSpecialty]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Specialties]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Specialty" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="b58b7414-33dc-43a8-a413-3f0613b06645" ChangeDateTime="09/07/2024 11:44:05">
+    <Property Name="ElementName" Value="[dbo].[PaymentTypes].[PaymentTypeId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[PaymentTypes]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="id" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="9c0e78a4-9b50-46a2-b34b-60ae9866dd03" ChangeDateTime="09/07/2024 11:44:09">
+    <Property Name="ElementName" Value="[dbo].[PaymentTypes].[id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[PaymentTypes]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Id" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="bb93e91d-286e-4134-8f9b-8eab7216ef64" ChangeDateTime="09/07/2024 11:45:00">
+    <Property Name="ElementName" Value="[dbo].[Sales].[PaymentTypeId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Sales]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="PaymentType" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="fc6a60d1-7b8b-4ed1-8327-c051c57cffda" ChangeDateTime="09/07/2024 11:49:15">
+    <Property Name="ElementName" Value="[dbo].[ReturnsProducts].[ReturnStatusId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ReturnsProducts]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ReturnStatusName" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="e6d9326a-d026-4095-bb6b-994b2aacf917" ChangeDateTime="09/07/2024 11:50:24">
+    <Property Name="ElementName" Value="[dbo].[Sales].[ClientId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Sales]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="IDPatient" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="d9984b9c-0566-4aef-b340-d812667eb878" ChangeDateTime="09/07/2024 11:52:35">
+    <Property Name="ElementName" Value="[dbo].[Sales].[SaleStatusId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Sales]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="SaleStatus" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="0937b3c5-2888-4854-b632-2d6efa045da0" ChangeDateTime="09/07/2024 12:11:12">
+    <Property Name="ElementName" Value="[dbo].[Products].[Barcode]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Products]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="IDORBarcode" />
+  </Operation>
 </Operations>

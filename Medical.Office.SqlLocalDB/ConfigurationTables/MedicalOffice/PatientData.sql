@@ -5,7 +5,7 @@
     [FathersSurname] VARCHAR(255) NULL, 
     [MothersSurname] VARCHAR(255) NULL, 
     [DateOfBirth ] DATE NOT NULL, 
-    [Gender ] NCHAR(10) NULL, 
+    [Gender] NCHAR(10) NULL, 
     [Address] VARCHAR(MAX) NULL,
     [Country] VARCHAR(50) NULL, 
     [City] VARCHAR(50) NULL, 
@@ -22,8 +22,9 @@
     [BloodType ] VARCHAR(50) NULL, 
     [DateCreated ] DATETIME NULL DEFAULT GetDate(), 
     [LastUpdated ] DATETIME NULL DEFAULT GetDate(), 
-    [Photo] VARCHAR(MAX) NULL, 
+    [Photo] VARBINARY(MAX) NULL, 
 
     [InternalNotes] VARCHAR(MAX) NULL, 
-    CONSTRAINT [PK_PatientData] PRIMARY KEY ([ID]) 
+    CONSTRAINT [PK_PatientData] PRIMARY KEY ([ID]), 
+    CONSTRAINT [FK_PatientData_ToGender] FOREIGN KEY ([Gender]) REFERENCES [Genders]([Gender]) 
 )

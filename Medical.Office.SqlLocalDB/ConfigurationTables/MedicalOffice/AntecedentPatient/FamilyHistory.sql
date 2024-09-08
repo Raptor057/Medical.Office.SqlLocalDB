@@ -10,5 +10,5 @@
     Others BIT, 
     [OthersData] VARCHAR(50) NULL, 
     [DateTimeSnap] DATETIME NULL DEFAULT GetDate(), 
-    CONSTRAINT [FK_FamilyHistory_ToPatient] FOREIGN KEY ([IDPatient]) REFERENCES [PatientData]([ID])
+    CONSTRAINT [FK_FamilyHistory_ToPatientData] FOREIGN KEY ([IDPatient]) REFERENCES [PatientData]([ID])
 )

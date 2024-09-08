@@ -8,4 +8,5 @@
     Email VARCHAR(100), -- Correo electrónico del doctor
     CreatedAt DATETIME DEFAULT GETDATE(), -- Fecha de creación del registro
     UpdatedAt DATETIME DEFAULT GETDATE() -- Fecha de la última actualización
-)
+, 
+    CONSTRAINT [FK_Doctors_ToSpecialities] FOREIGN KEY ([Specialty]) REFERENCES [Specialties]([Specialty]))
