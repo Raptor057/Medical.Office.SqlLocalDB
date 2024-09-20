@@ -2,7 +2,7 @@
 (
 	[Id] BIGINT NOT NULL PRIMARY KEY IDENTITY, 
     [Usr] VARCHAR(20) NOT NULL, 
-    [Psswd] VARCHAR(50) NOT NULL, 
+    [Psswd] VARCHAR(MAX) NOT NULL, 
     [Name] VARCHAR(50) NOT NULL, 
     [Lastname] VARCHAR(50) NOT NULL, 
     [Role] VARCHAR(50) NOT NULL, 
