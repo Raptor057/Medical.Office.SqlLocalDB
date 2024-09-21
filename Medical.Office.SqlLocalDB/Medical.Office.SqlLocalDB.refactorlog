@@ -91,4 +91,60 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="IDORBarcode" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="edde3e37-5d2c-41a3-b0fc-a0afecfbab04" ChangeDateTime="09/21/2024 17:49:30">
+    <Property Name="ElementName" Value="[dbo].[LoginHistory].[User]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[LoginHistory]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Usr" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="08f027a9-7048-4a01-a887-6ad08bb644ac" ChangeDateTime="09/21/2024 17:49:36">
+    <Property Name="ElementName" Value="[dbo].[LoginHistory].[Name]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[LoginHistory]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Psswd" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="6823fc01-43f9-446f-87f0-c8de128fa5d5" ChangeDateTime="09/21/2024 17:50:53">
+    <Property Name="ElementName" Value="[dbo].[LoginHistory].[Psswd]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[LoginHistory]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Name" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="48726865-d618-4c59-8732-1308fb5742ac" ChangeDateTime="09/21/2024 19:02:07">
+    <Property Name="ElementName" Value="[dbo].[UsersMovements].[Name]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[UsersMovements]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="UsrName" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="0a123fe2-3011-40af-9023-88436e1f73ee" ChangeDateTime="09/21/2024 19:02:09">
+    <Property Name="ElementName" Value="[dbo].[UsersMovements].[Role]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[UsersMovements]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="UsrRole" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="63d8200d-73f7-4e66-bc84-d5e72940cbe3" ChangeDateTime="09/21/2024 19:02:12">
+    <Property Name="ElementName" Value="[dbo].[UsersMovements].[Movement]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[UsersMovements]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="UsrMovement" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="5c1c2232-bc39-4d62-afc0-2ccef2c826d1" ChangeDateTime="09/21/2024 19:02:21">
+    <Property Name="ElementName" Value="[dbo].[LoginHistory].[Name]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[LoginHistory]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="UsrName" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="52b2efd5-b239-421b-8415-eed67539bff6" ChangeDateTime="09/21/2024 19:02:23">
+    <Property Name="ElementName" Value="[dbo].[LoginHistory].[Token]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[LoginHistory]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="UsrToken" />
+  </Operation>
 </Operations>

@@ -100,6 +100,8 @@
     <Build Include="ConfigurationTables\MedicalOffice\Doctors.sql" />
     <Build Include="ConfigurationTables\POS\CashRegister\CashMovements.sql" />
     <Build Include="ConfigurationTables\POS\CashRegister\CashRegisters.sql" />
+    <Build Include="ConfigurationTables\MedicalOffice\LoginHistory.sql" />
+    <Build Include="ConfigurationTables\MedicalOffice\UsersMovements.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="Medical.Office.SqlLocalDB.refactorlog" />
