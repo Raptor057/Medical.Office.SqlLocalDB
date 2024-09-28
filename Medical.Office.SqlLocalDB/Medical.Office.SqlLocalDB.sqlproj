@@ -66,16 +66,10 @@
     <Folder Include="ProductionTables\POS" />
     <Folder Include="ConfigurationTables\MedicalOffice\AntecedentPatient" />
     <Folder Include="ConfigurationTables\POS\CashRegister" />
+    <Folder Include="ConfigurationTables\MedicalOffice\Configuracion" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="ConfigurationTables\MedicalOffice\Gender.sql" />
-    <Build Include="ConfigurationTables\MedicalOffice\OfficeSetup.sql" />
-    <Build Include="ConfigurationTables\MedicalOffice\Positions.sql" />
-    <Build Include="ConfigurationTables\MedicalOffice\Roles.sql" />
-    <Build Include="ConfigurationTables\MedicalOffice\Specialties.sql" />
     <Build Include="ConfigurationTables\MedicalOffice\TypeOfAppointment.sql" />
-    <Build Include="ConfigurationTables\MedicalOffice\Users.sql" />
-    <Build Include="ConfigurationTables\MedicalOffice\UserStatuses.sql" />
     <Build Include="ConfigurationTables\POS\InventoryMovements.sql" />
     <Build Include="ConfigurationTables\POS\PaymentTypes.sql" />
     <Build Include="ConfigurationTables\POS\ProductCategories.sql" />
@@ -100,10 +94,20 @@
     <Build Include="ConfigurationTables\MedicalOffice\Doctors.sql" />
     <Build Include="ConfigurationTables\POS\CashRegister\CashMovements.sql" />
     <Build Include="ConfigurationTables\POS\CashRegister\CashRegisters.sql" />
-    <Build Include="ConfigurationTables\MedicalOffice\LoginHistory.sql" />
     <Build Include="ConfigurationTables\MedicalOffice\UsersMovements.sql" />
+    <Build Include="ConfigurationTables\MedicalOffice\Configuracion\Gender.sql" />
+    <Build Include="ConfigurationTables\MedicalOffice\Configuracion\OfficeSetup.sql" />
+    <Build Include="ConfigurationTables\MedicalOffice\PatientsFiles.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="Medical.Office.SqlLocalDB.refactorlog" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="ConfigurationTables\MedicalOffice\Configuracion\LoginHistory.sql" />
+    <Build Include="ConfigurationTables\MedicalOffice\Configuracion\Positions.sql" />
+    <Build Include="ConfigurationTables\MedicalOffice\Configuracion\Roles.sql" />
+    <Build Include="ConfigurationTables\MedicalOffice\Configuracion\Specialties.sql" />
+    <Build Include="ConfigurationTables\MedicalOffice\Configuracion\UserStatuses.sql" />
+    <Build Include="ConfigurationTables\MedicalOffice\Configuracion\Users.sql" />
   </ItemGroup>
 </Project>

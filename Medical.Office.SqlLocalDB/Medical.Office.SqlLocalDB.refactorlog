@@ -147,4 +147,18 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="UsrToken" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="cc0a9c3a-5dc2-4435-93fe-9d5e41a82add" ChangeDateTime="09/28/2024 06:40:16">
+    <Property Name="ElementName" Value="[dbo].[PatientsFiles].[chunkIndex]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[PatientsFiles]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ChunkIndex" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="7038f602-656b-47ae-9507-09458c4f4020" ChangeDateTime="09/28/2024 06:40:20">
+    <Property Name="ElementName" Value="[dbo].[PatientsFiles].[totalChunks]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[PatientsFiles]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="TotalChunks" />
+  </Operation>
 </Operations>
