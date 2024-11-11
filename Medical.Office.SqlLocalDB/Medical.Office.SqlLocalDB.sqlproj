@@ -98,7 +98,6 @@
     <Build Include="ConfigurationTables\MedicalOffice\Configuracion\Gender.sql" />
     <Build Include="ConfigurationTables\MedicalOffice\Configuracion\OfficeSetup.sql" />
     <Build Include="ConfigurationTables\MedicalOffice\PatientsFiles.sql" />
-    <Build Include="Medical.Office.SqlLocalDB.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="Medical.Office.SqlLocalDB.refactorlog" />
@@ -112,7 +111,6 @@
     <Build Include="ConfigurationTables\MedicalOffice\Configuracion\Users.sql" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Dockerfile" />
     <None Include="Medical.Office.SqlLocalDB.publish.xml" />
   </ItemGroup>
 </Project>
