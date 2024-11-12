@@ -112,5 +112,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Medical.Office.SqlLocalDB.publish.xml" />
+    <None Include="SqlSchemaCompare.scmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="InsertPreConfig.sql" />
   </ItemGroup>
 </Project>
