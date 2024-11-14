@@ -51,10 +51,21 @@ El sistema se diseñó siguiendo principios de modularidad, lo que permite la fu
  [![PayPal](https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://paypal.me/RogelioArriaga?country.x=MX&locale.x=es_XC) 
 
 
+
 ### Ejecutar Docker
-
+### 1) Generar la imagen
     docker build -t medical_office_db .
+### 2) Ejecutar despues
+	docker run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=Cbmwjmkq23" `
+	-p 1433:1433 --name sql1 --hostname sql1 `
+	-d medical_office_db
 
-    docker run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=Cbmwjmkq23" \
-       -p 1433:1433 --name sql1 --hostname sql1 \
-       -d medical_office_db
+### 3) En una sola linea (Opcional para no hacer el paso 2)
+	  docker run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=Cbmwjmkq23" -p 1433:1433 --name sql1 --hostname sql1 -d medical_office_db
+
+### 4) Conectarse desde SQL Managmens Studio
+
+Server: localhost,1433
+Usr: sa
+Psw: Cbmwjmkq23
+
