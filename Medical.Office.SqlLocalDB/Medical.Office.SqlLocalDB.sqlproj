@@ -113,6 +113,7 @@
   <ItemGroup>
     <None Include="Medical.Office.SqlLocalDB.publish.xml" />
     <None Include="SqlSchemaCompare.scmp" />
+    <None Include="Dockerfile" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="InsertPreConfig.sql" />
