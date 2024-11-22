@@ -57,3 +57,73 @@ WHERE NOT EXISTS (
     AND Position = 'Programador' 
     AND Specialtie = 'Desarollador'
 );
+
+-- Para la tabla LaboralDays
+-- Para la tabla LaboralDays
+INSERT INTO LaboralDays (Days, Laboral, OpeningTime, ClosingTime)
+SELECT 'lunes', 1, '07:00:00', '19:00:00'
+WHERE NOT EXISTS (SELECT 1 FROM LaboralDays WHERE Days = 'Lunes');
+
+INSERT INTO LaboralDays (Days, Laboral, OpeningTime, ClosingTime)
+SELECT 'martes', 1, '07:00:00', '19:00:00'
+WHERE NOT EXISTS (SELECT 1 FROM LaboralDays WHERE Days = 'Martes');
+
+INSERT INTO LaboralDays (Days, Laboral, OpeningTime, ClosingTime)
+SELECT 'miércoles', 1, '07:00:00', '19:00:00'
+WHERE NOT EXISTS (SELECT 1 FROM LaboralDays WHERE Days = 'Miércoles');
+
+INSERT INTO LaboralDays (Days, Laboral, OpeningTime, ClosingTime)
+SELECT 'jueves', 1, '07:00:00', '19:00:00'
+WHERE NOT EXISTS (SELECT 1 FROM LaboralDays WHERE Days = 'Jueves');
+
+INSERT INTO LaboralDays (Days, Laboral, OpeningTime, ClosingTime)
+SELECT 'viernes', 1, '07:00:00', '19:00:00'
+WHERE NOT EXISTS (SELECT 1 FROM LaboralDays WHERE Days = 'Viernes');
+
+INSERT INTO LaboralDays (Days, Laboral, OpeningTime, ClosingTime)
+SELECT 'sábado', 1, '07:00:00', '19:00:00'
+WHERE NOT EXISTS (SELECT 1 FROM LaboralDays WHERE Days = 'Sábado');
+
+INSERT INTO LaboralDays (Days, Laboral, OpeningTime, ClosingTime)
+SELECT 'domingo', 1, '07:00:00', '19:00:00'
+WHERE NOT EXISTS (SELECT 1 FROM LaboralDays WHERE Days = 'Domingo');
+
+
+-- Para la tabla OfficeSetup
+INSERT INTO OfficeSetup (NameOfOffice, [Address])
+SELECT 'N/A', 'N/A'
+WHERE NOT EXISTS (
+    SELECT 1 
+    FROM OfficeSetup 
+    WHERE NameOfOffice = 'N/A' 
+    AND [Address]= 'N/A' 
+);
+
+-- Para la tabla DaysTranslation
+INSERT INTO DaysTranslation (DayInEnglish, DayInSpanish)
+SELECT 'monday', 'lunes'
+WHERE NOT EXISTS (SELECT 1 FROM DaysTranslation WHERE DayInEnglish = 'monday');
+
+INSERT INTO DaysTranslation (DayInEnglish, DayInSpanish)
+SELECT 'tuesday', 'martes'
+WHERE NOT EXISTS (SELECT 1 FROM DaysTranslation WHERE DayInEnglish = 'tuesday');
+
+INSERT INTO DaysTranslation (DayInEnglish, DayInSpanish)
+SELECT 'wednesday', 'miércoles'
+WHERE NOT EXISTS (SELECT 1 FROM DaysTranslation WHERE DayInEnglish = 'wednesday');
+
+INSERT INTO DaysTranslation (DayInEnglish, DayInSpanish)
+SELECT 'thursday', 'jueves'
+WHERE NOT EXISTS (SELECT 1 FROM DaysTranslation WHERE DayInEnglish = 'thursday');
+
+INSERT INTO DaysTranslation (DayInEnglish, DayInSpanish)
+SELECT 'friday', 'viernes'
+WHERE NOT EXISTS (SELECT 1 FROM DaysTranslation WHERE DayInEnglish = 'friday');
+
+INSERT INTO DaysTranslation (DayInEnglish, DayInSpanish)
+SELECT 'saturday', 'sábado'
+WHERE NOT EXISTS (SELECT 1 FROM DaysTranslation WHERE DayInEnglish = 'saturday');
+
+INSERT INTO DaysTranslation (DayInEnglish, DayInSpanish)
+SELECT 'sunday', 'domingo'
+WHERE NOT EXISTS (SELECT 1 FROM DaysTranslation WHERE DayInEnglish = 'sunday');

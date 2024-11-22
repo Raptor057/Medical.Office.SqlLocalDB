@@ -98,6 +98,9 @@
     <Build Include="ConfigurationTables\MedicalOffice\Configuracion\Gender.sql" />
     <Build Include="ConfigurationTables\MedicalOffice\Configuracion\OfficeSetup.sql" />
     <Build Include="ConfigurationTables\MedicalOffice\PatientsFiles.sql" />
+    <Build Include="ConfigurationTables\MedicalOffice\Configuracion\LaboralDays.sql" />
+    <Build Include="ConfigurationTables\MedicalOffice\Configuracion\DaysTranslation.sql" />
+    <Build Include="ConfigurationTables\Views\TodayInLettersView.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="Medical.Office.SqlLocalDB.refactorlog" />

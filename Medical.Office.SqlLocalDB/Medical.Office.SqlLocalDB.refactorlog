@@ -161,4 +161,18 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="TotalChunks" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="93aaa8b8-6024-47b8-b258-0227fd58e715" ChangeDateTime="11/22/2024 05:58:54">
+    <Property Name="ElementName" Value="[dbo].[MedicalAppointmentCalendar].[AppointmentDateTime]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[MedicalAppointmentCalendar]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="AppointmentDate" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="bc89b248-753a-465c-be8a-98d98a0aacfd" ChangeDateTime="11/22/2024 06:16:49">
+    <Property Name="ElementName" Value="[dbo].[LaboralDays].[OpeningTime1]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[LaboralDays]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="OpeningTime" />
+  </Operation>
 </Operations>
