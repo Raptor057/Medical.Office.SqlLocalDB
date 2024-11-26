@@ -119,6 +119,7 @@
     <None Include="Dockerfile" />
     <None Include="README.md" />
     <None Include="Medical.Office.SqlLocalDB.Docker.publish.xml" />
+    <None Include="SqlSchemaCompareDocker.scmp" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="InsertPreConfig.sql" />

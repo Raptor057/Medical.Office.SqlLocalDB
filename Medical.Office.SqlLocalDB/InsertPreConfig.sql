@@ -40,9 +40,18 @@ SELECT 'Asistente' WHERE NOT EXISTS (SELECT 1 FROM Roles WHERE RolesName = 'Asis
 INSERT INTO Positions (PositionName)
 SELECT 'Programador' WHERE NOT EXISTS (SELECT 1 FROM Positions WHERE PositionName = 'Programador');
 
+-- Para la tabla Positions
+INSERT INTO Positions (PositionName)
+SELECT 'Doctor' WHERE NOT EXISTS (SELECT 1 FROM Positions WHERE PositionName = 'Doctor');
+
 -- Para la tabla Specialties
 INSERT INTO Specialties (Specialty)
 SELECT 'Desarollador' WHERE NOT EXISTS (SELECT 1 FROM Specialties WHERE Specialty = 'Desarollador');
+
+-- Para la tabla Specialties
+INSERT INTO Specialties (Specialty)
+SELECT 'Cirujano' WHERE NOT EXISTS (SELECT 1 FROM Specialties WHERE Specialty = 'Cirujano');
+
 
 -- Para perfil desarollador
 INSERT INTO Users (Usr, Psswd, [Name], Lastname, [Role], Position, Specialtie)
@@ -56,6 +65,22 @@ WHERE NOT EXISTS (
     AND [Role] = 'Programador' 
     AND Position = 'Programador' 
     AND Specialtie = 'Desarollador'
+);
+
+-- Para perfil desarollador
+-- Usr: Admin
+-- Psswd: Admin123*
+INSERT INTO Users (Usr, Psswd, [Name], Lastname, [Role], Position, Specialtie)
+SELECT 'Admin', '0A5BC3E342432F1BAD92FFD51B785343EC72906CDBA6A26131060B008E786656', 'Admin', 'System', 'Doctor', 'Doctor', 'Cirujano'
+WHERE NOT EXISTS (
+    SELECT 1 FROM Users 
+    WHERE Usr = 'Admin' 
+    AND Psswd = '0A5BC3E342432F1BAD92FFD51B785343EC72906CDBA6A26131060B008E786656' 
+    AND [Name] = 'Admin' 
+    AND Lastname = 'System' 
+    AND [Role] = 'Doctor' 
+    AND Position = 'Doctor' 
+    AND Specialtie = 'Cirujano'
 );
 
 -- Para la tabla LaboralDays
