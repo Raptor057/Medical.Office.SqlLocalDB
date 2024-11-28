@@ -114,6 +114,7 @@
     <Build Include="ConfigurationTables\MedicalOffice\Configuracion\Users.sql" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Medical.Office.SqlLocalDB.publish.Docker.Mac.xml" />
     <None Include="Medical.Office.SqlLocalDB.publish.xml" />
     <None Include="SqlSchemaCompare.scmp" />
     <None Include="Dockerfile" />
