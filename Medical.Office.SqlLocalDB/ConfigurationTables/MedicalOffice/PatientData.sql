@@ -25,6 +25,5 @@
     [Photo] VARBINARY(MAX) NULL, 
 
     [InternalNotes] VARCHAR(MAX) NULL, 
-    CONSTRAINT [PK_PatientData] PRIMARY KEY ([ID]), 
-    CONSTRAINT [FK_PatientData_ToGender] FOREIGN KEY ([Gender]) REFERENCES [Genders]([Gender]) 
+    CONSTRAINT [PK_PatientData] PRIMARY KEY ([ID]) 
 )
