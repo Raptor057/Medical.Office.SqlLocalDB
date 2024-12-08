@@ -1,14 +1,12 @@
 ﻿CREATE TABLE [dbo].[PatientsFiles]
 (
     [Id] BIGINT NOT NULL PRIMARY KEY IDENTITY, 
-    [IDPatient] BIGINT NOT NULL, -- Asegúrate de que siempre tenga un ID de paciente
-    [FileName] NVARCHAR(Max) NOT NULL, -- Ampliar para nombres de archivo más largos
-    [FileType] NVARCHAR(Max) NOT NULL, -- Tipo de archivo siempre debe estar definido
-    [FileExtension] NVARCHAR(10) NOT NULL, -- Extensión siempre requerida
-    [ChunkIndex] INT NOT NULL, 
-    [TotalChunks] INT NOT NULL, 
-    [Description] NVARCHAR(Max) NULL, -- Ampliar descripción
-    [FileData] VARBINARY(MAX) NOT NULL, -- Los datos del archivo son obligatorios
-    [DateTimeSnap] DATETIME NOT NULL DEFAULT GETDATE(), 
+    [IDPatient] BIGINT NOT NULL, -- Referencia al ID del paciente
+    [FileName] NVARCHAR(MAX) NOT NULL, -- Nombre del archivo completo
+    [FileType] NVARCHAR(50) NOT NULL, -- Tipo de archivo (e.g., Imagen, Documento)
+    [FileExtension] NVARCHAR(10) NOT NULL, -- Extensión del archivo (e.g., jpg, pdf)
+    [Description] NVARCHAR(MAX) NULL, -- Descripción opcional del archivo
+    [FileData] VARBINARY(MAX) NOT NULL, -- Datos binarios completos del archivo
+    [DateTimeUploaded] DATETIME NOT NULL DEFAULT GETDATE(), -- Fecha y hora de la carga
     CONSTRAINT [FK_PatientsFiles_ToPatientData] FOREIGN KEY ([IDPatient]) REFERENCES [PatientData]([ID])
 );
