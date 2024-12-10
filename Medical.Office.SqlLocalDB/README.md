@@ -14,7 +14,9 @@
 
 
 # Descripción y contexto
-
+ejecutar en Powershell
+`docker run -d --name sql1 -e ACCEPT_EULA=Y -e SA_PASSWORD=Cbmwjmkq23 -p 1433:1433 --restart always mcr.microsoft.com/mssql/server:latest
+`
 
 ## Descripción
 
