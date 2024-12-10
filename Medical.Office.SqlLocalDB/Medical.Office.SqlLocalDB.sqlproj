@@ -101,6 +101,9 @@
     <Build Include="ConfigurationTables\MedicalOffice\Configuracion\LaboralDays.sql" />
     <Build Include="ConfigurationTables\MedicalOffice\Configuracion\DaysTranslation.sql" />
     <Build Include="ConfigurationTables\Views\TodayInLettersView.sql" />
+    <Build Include="Dapper Crear entidades para el Mapeo de Dapper.sql" />
+    <Build Include="Dapper Crear Records para el Mapeo de Entidades.sql" />
+    <Build Include="PatientData.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="Medical.Office.SqlLocalDB.refactorlog" />
