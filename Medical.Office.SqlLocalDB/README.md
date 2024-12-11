@@ -15,9 +15,19 @@
 
 # Descripción y contexto
 ejecutar en Powershell
+- Crear volumen en Docker
+`docker volume create sql_data`
+
+- Crear contenedor
+
 `docker run -d --name sql1 -e ACCEPT_EULA=Y -e SA_PASSWORD=Cbmwjmkq23 -p 1433:1433 --restart always mcr.microsoft.com/mssql/server:latest
 `
 
+- Crear contnedor con volumen
+
+
+`docker volume create sql_data && docker run -d --name sql1 -e ACCEPT_EULA=Y -e SA_PASSWORD=Cbmwjmkq23 -p 1433:1433 --restart always -v sql_data:/var/opt/mssql mcr.microsoft.com/mssql/server:latest
+`
 ## Descripción
 
 La base de datos **Medical.Office.SqlLocalDB** es un sistema desarrollado para gestionar de manera integral la administración de un consultorio médico. Este sistema está diseñado para manejar dos áreas clave:
