@@ -1,4 +1,4 @@
-DECLARE @TableName sysname = 'PatientsFiles';
+DECLARE @TableName sysname = 'VentasPorDia';
 SELECT
     @TableName = name
 FROM sys.tables
