@@ -149,6 +149,15 @@ INSERT INTO DaysTranslation (DayInEnglish, DayInSpanish)
 SELECT 'saturday', 'sábado'
 WHERE NOT EXISTS (SELECT 1 FROM DaysTranslation WHERE DayInEnglish = 'saturday');
 
-INSERT INTO DaysTranslation (DayInEnglish, DayInSpanish)
-SELECT 'sunday', 'domingo'
-WHERE NOT EXISTS (SELECT 1 FROM DaysTranslation WHERE DayInEnglish = 'sunday');
+INSERT INTO TypeOfAppointment (NameTypeOfAppointment)
+SELECT 'Consulta' WHERE NOT EXISTS (SELECT 1 FROM Specialties WHERE Specialty = 'Consulta');
+
+INSERT INTO TypeOfAppointment (NameTypeOfAppointment)
+SELECT 'Pre Operatorio' WHERE NOT EXISTS (SELECT 1 FROM Specialties WHERE Specialty = 'Pre Operatorio');
+
+INSERT INTO TypeOfAppointment (NameTypeOfAppointment)
+SELECT 'Post Operatorio' WHERE NOT EXISTS (SELECT 1 FROM Specialties WHERE Specialty = 'Post Operatorio');
+
+
+
+
