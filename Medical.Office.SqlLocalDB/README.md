@@ -20,13 +20,30 @@ ejecutar en Powershell
 
 - Crear contenedor
 
-`docker run -d --name sql1 -e ACCEPT_EULA=Y -e SA_PASSWORD=Cbmwjmkq23 -p 1433:1433 --restart always mcr.microsoft.com/mssql/server:latest
-`
+`docker run -d --name sql1 -e ACCEPT_EULA=Y -e SA_PASSWORD=Cbmwjmkq23 -p 1433:1433 --restart always mcr.microsoft.com/mssql/server:latest`
 
 - Crear contnedor con volumen
 
 
-`docker volume create sql_data && docker run -d --name sql1 -e ACCEPT_EULA=Y -e SA_PASSWORD=Cbmwjmkq23 -p 1433:1433 --restart always -v sql_data:/var/opt/mssql mcr.microsoft.com/mssql/server:latest
+`docker volume create sql_data && docker run -d --name sql1 -e ACCEPT_EULA=Y -e SA_PASSWORD=Cbmwjmkq23 -p 1433:1433 --restart always -v sql_data:/var/opt/mssql mcr.microsoft.com/mssql/server:latest`
+
+- Esta opcion es la recomendada por la zona horaria
+
+`docker pull mcr.microsoft.com/mssql/server:2022-latest`
+
+y luego 
+
+`docker run -d --name sql1 \
+-e ACCEPT_EULA=Y \
+-e SA_PASSWORD=Cbmwjmkq23 \
+-e TZ=America/Mexico_City \
+-p 1433:1433 \
+--restart always \
+-v sql_data:/var/opt/mssql \
+mcr.microsoft.com/mssql/server:2022-latest`
+
+- Crear contenedor con la zona horaria
+`docker volume create sql_data && docker run -d --name sql1 -e ACCEPT_EULA=Y -e SA_PASSWORD=Cbmwjmkq23 -v /usr/share/zoneinfo/America/Mexico_City:/etc/localtime:ro -v /usr/share/zoneinfo:/usr/share/zoneinfo:ro -p 1433:1433 --restart always -v sql_data:/var/opt/mssql mcr.microsoft.com/mssql/server:latest
 `
 ## Descripción
 
