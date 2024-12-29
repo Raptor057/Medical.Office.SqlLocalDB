@@ -4,4 +4,4 @@
 FROM 
     DaysTranslation DT
 WHERE 
-    DT.DayInEnglish = FORMAT(GETDATE(), 'dddd');
+    DT.DayInEnglish = FORMAT(dbo.ufntolocaltime(GETUTCDATE()), 'dddd');

@@ -1,32 +1,31 @@
--- SELECT TOP (1000) [Id]
---       ,[IDPatient]
---       ,[IDDoctor]
---       ,[AppointmentDate]
---       ,[AppointmentTime]
---       ,[ReasonForVisit]
---       ,[AppointmentStatus]
---       ,[Notes]
---       ,[CreatedAt]
---       ,[UpdatedAt]
---       ,[TypeOfAppointment]
---   FROM [Medical.Office.SqlLocalDB].[dbo].[MedicalAppointmentCalendar]
+ DECLARE @PatientID INT;
+DECLARE @DateStart DATE = '2024-12-01';
+DECLARE @DateEnd DATE = '2025-01-31';
+DECLARE @TimeStart TIME = '07:00:00';
+DECLARE @TimeEnd TIME = '19:00:00';
 
+-- Loop through 1000 patients
+SET @PatientID = 1;
+WHILE @PatientID <= 1000
+BEGIN
+    -- Generate 1000 appointments for each patient
+    DECLARE @Counter INT = 1;
+    WHILE @Counter <= 1000
+    BEGIN
+        -- Generate random date between @DateStart and @DateEnd
+        DECLARE @RandomDate DATE = DATEADD(DAY, ABS(CHECKSUM(NEWID())) % (DATEDIFF(DAY, @DateStart, @DateEnd) + 1), @DateStart);
 
-DECLARE @DateTime DATETIME
-DECLARE @Date DATE
-DECLARE @Time TIME
+        -- Generate random time between @TimeStart and @TimeEnd
+        DECLARE @RandomTime TIME = DATEADD(SECOND, ABS(CHECKSUM(NEWID())) % DATEDIFF(SECOND, @TimeStart, @TimeEnd), @TimeStart);
 
-SET @DateTime = (SELECT GETDATE() + CAST((RAND() * 20 - 10) AS INT))
+        -- Insert the appointment into the table
+        INSERT INTO [Medical.Office.SqlLocalDB].[dbo].[MedicalAppointmentCalendar]
+        ([IDPatient], [IDDoctor], [AppointmentDate], [AppointmentTime], [ReasonForVisit], [AppointmentStatus], [Notes], [TypeOfAppointment])
+        VALUES
+        (@PatientID, 1, @RandomDate, @RandomTime, 'Routine check-up', 'Scheduled', 'Patient requested a morning appointment','Consulta');
 
--- Extraer la fecha
-SET @Date = CAST(@DateTime AS DATE)
+        SET @Counter = @Counter + 1;
+    END
 
--- Extraer la hora
-SET @Time = CAST(@DateTime AS TIME(0))
-
--- Mostrar los resultados
---SELECT @DateTime AS OriginalDateTime, @Date AS ExtractedDate, @Time AS ExtractedTime
-
-
-INSERT INTO MedicalAppointmentCalendar(IDPatient,IDDoctor,AppointmentDate,AppointmentTime,ReasonForVisit,AppointmentStatus,Notes,TypeOfAppointment)
-VALUES (1,30004,@Date,@Time,'Test','Test','Activo','Consulta')
+    SET @PatientID = @PatientID + 1;
+END
