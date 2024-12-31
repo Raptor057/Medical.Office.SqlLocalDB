@@ -162,6 +162,8 @@ SELECT 'Pre Operatorio' WHERE NOT EXISTS (SELECT 1 FROM Specialties WHERE Specia
 INSERT INTO TypeOfAppointment (NameTypeOfAppointment)
 SELECT 'Post Operatorio' WHERE NOT EXISTS (SELECT 1 FROM Specialties WHERE Specialty = 'Post Operatorio');
 
+INSERT INTO ConsultingTime(MedicalConsultationMinutesForPatients)
+SELECT 30 WHERE NOT EXISTS (SELECT 1 FROM ConsultingTime WHERE MedicalConsultationMinutesForPatients = 30)
 
 
 
