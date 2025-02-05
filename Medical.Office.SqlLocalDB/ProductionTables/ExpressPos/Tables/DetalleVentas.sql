@@ -5,6 +5,7 @@ CREATE TABLE DetalleVentas (
     ProductoID INTEGER NOT NULL,
     Cantidad INTEGER NOT NULL,
     Subtotal REAL NOT NULL,
+    IDPatient BIGINT NULL
     FOREIGN KEY (VentaID) REFERENCES Ventas(VentaID),
     FOREIGN KEY (ProductoID) REFERENCES Productos(ProductoID)
 );

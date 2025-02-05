@@ -3,13 +3,15 @@
   <Version>10</Version>
   <SourceModelProvider>
     <ProjectBasedModelProvider>
-      <ProjectGuid>{693c67a0-e7e0-48c1-b3b8-7e9f302865d8}</ProjectGuid>
-      <Name>Medical.Office.SqlLocalDB</Name>
+      <ProjectFilePath>/Users/raptor/Documents/Git/Medical.Office.SqlLocalDB/Medical.Office.SqlLocalDB/Medical.Office.SqlLocalDB.sqlproj</ProjectFilePath>
+      <TargetScripts>[/Users/raptor/Documents/Git/Medical.Office.SqlLocalDB/Medical.Office.SqlLocalDB/ConfigurationTables/MedicalOffice/AntecedentPatient/ActiveMedications.sql,/Users/raptor/Documents/Git/Medical.Office.SqlLocalDB/Medical.Office.SqlLocalDB/ConfigurationTables/MedicalOffice/AntecedentPatient/FamilyHistory.sql,/Users/raptor/Documents/Git/Medical.Office.SqlLocalDB/Medical.Office.SqlLocalDB/ConfigurationTables/MedicalOffice/AntecedentPatient/MedicalHistoryNotes.sql,/Users/raptor/Documents/Git/Medical.Office.SqlLocalDB/Medical.Office.SqlLocalDB/ConfigurationTables/MedicalOffice/AntecedentPatient/NonPathologicalHistory.sql,/Users/raptor/Documents/Git/Medical.Office.SqlLocalDB/Medical.Office.SqlLocalDB/ConfigurationTables/MedicalOffice/AntecedentPatient/PathologicalBackground.sql,/Users/raptor/Documents/Git/Medical.Office.SqlLocalDB/Medical.Office.SqlLocalDB/ConfigurationTables/MedicalOffice/AntecedentPatient/PatientAllergies.sql,/Users/raptor/Documents/Git/Medical.Office.SqlLocalDB/Medical.Office.SqlLocalDB/ConfigurationTables/MedicalOffice/AntecedentPatient/PsychiatricHistory.sql,/Users/raptor/Documents/Git/Medical.Office.SqlLocalDB/Medical.Office.SqlLocalDB/ConfigurationTables/MedicalOffice/Configuracion/DaysTranslation.sql,/Users/raptor/Documents/Git/Medical.Office.SqlLocalDB/Medical.Office.SqlLocalDB/ConfigurationTables/MedicalOffice/Configuracion/Gender.sql,/Users/raptor/Documents/Git/Medical.Office.SqlLocalDB/Medical.Office.SqlLocalDB/ConfigurationTables/MedicalOffice/Configuracion/LaboralDays.sql,/Users/raptor/Documents/Git/Medical.Office.SqlLocalDB/Medical.Office.SqlLocalDB/ConfigurationTables/MedicalOffice/Configuracion/LoginHistory.sql,/Users/raptor/Documents/Git/Medical.Office.SqlLocalDB/Medical.Office.SqlLocalDB/ConfigurationTables/MedicalOffice/Configuracion/OfficeSetup.sql,/Users/raptor/Documents/Git/Medical.Office.SqlLocalDB/Medical.Office.SqlLocalDB/ConfigurationTables/MedicalOffice/Configuracion/Positions.sql,/Users/raptor/Documents/Git/Medical.Office.SqlLocalDB/Medical.Office.SqlLocalDB/ConfigurationTables/MedicalOffice/Configuracion/Roles.sql,/Users/raptor/Documents/Git/Medical.Office.SqlLocalDB/Medical.Office.SqlLocalDB/ConfigurationTables/MedicalOffice/Configuracion/Specialties.sql,/Users/raptor/Documents/Git/Medical.Office.SqlLocalDB/Medical.Office.SqlLocalDB/ConfigurationTables/MedicalOffice/Configuracion/Users.sql,/Users/raptor/Documents/Git/Medical.Office.SqlLocalDB/Medical.Office.SqlLocalDB/ConfigurationTables/MedicalOffice/Configuracion/UserStatuses.sql,/Users/raptor/Documents/Git/Medical.Office.SqlLocalDB/Medical.Office.SqlLocalDB/ConfigurationTables/MedicalOffice/ConsultingTime.sql,/Users/raptor/Documents/Git/Medical.Office.SqlLocalDB/Medical.Office.SqlLocalDB/ConfigurationTables/MedicalOffice/Doctors.sql,/Users/raptor/Documents/Git/Medical.Office.SqlLocalDB/Medical.Office.SqlLocalDB/ConfigurationTables/MedicalOffice/MedicalAppointmentCalendar.sql,/Users/raptor/Documents/Git/Medical.Office.SqlLocalDB/Medical.Office.SqlLocalDB/ConfigurationTables/MedicalOffice/PatientData.sql,/Users/raptor/Documents/Git/Medical.Office.SqlLocalDB/Medical.Office.SqlLocalDB/ConfigurationTables/MedicalOffice/PatientsFiles.sql,/Users/raptor/Documents/Git/Medical.Office.SqlLocalDB/Medical.Office.SqlLocalDB/ConfigurationTables/MedicalOffice/TypeOfAppointment.sql,/Users/raptor/Documents/Git/Medical.Office.SqlLocalDB/Medical.Office.SqlLocalDB/ConfigurationTables/MedicalOffice/UsersMovements.sql,/Users/raptor/Documents/Git/Medical.Office.SqlLocalDB/Medical.Office.SqlLocalDB/ConfigurationTables/POS/CashRegister/CashMovements.sql,/Users/raptor/Documents/Git/Medical.Office.SqlLocalDB/Medical.Office.SqlLocalDB/ConfigurationTables/POS/CashRegister/CashRegisters.sql,/Users/raptor/Documents/Git/Medical.Office.SqlLocalDB/Medical.Office.SqlLocalDB/ConfigurationTables/POS/InventoryMovements.sql,/Users/raptor/Documents/Git/Medical.Office.SqlLocalDB/Medical.Office.SqlLocalDB/ConfigurationTables/POS/PaymentTypes.sql,/Users/raptor/Documents/Git/Medical.Office.SqlLocalDB/Medical.Office.SqlLocalDB/ConfigurationTables/POS/ProductCategories.sql,/Users/raptor/Documents/Git/Medical.Office.SqlLocalDB/Medical.Office.SqlLocalDB/ConfigurationTables/POS/Products.sql,/Users/raptor/Documents/Git/Medical.Office.SqlLocalDB/Medical.Office.SqlLocalDB/ConfigurationTables/POS/Promotions.sql,/Users/raptor/Documents/Git/Medical.Office.SqlLocalDB/Medical.Office.SqlLocalDB/ConfigurationTables/POS/ReturnDetails.sql,/Users/raptor/Documents/Git/Medical.Office.SqlLocalDB/Medical.Office.SqlLocalDB/ConfigurationTables/POS/ReturnsProduct.sql,/Users/raptor/Documents/Git/Medical.Office.SqlLocalDB/Medical.Office.SqlLocalDB/ConfigurationTables/POS/ReturnStatuses.sql,/Users/raptor/Documents/Git/Medical.Office.SqlLocalDB/Medical.Office.SqlLocalDB/ConfigurationTables/POS/SaleDetails.sql,/Users/raptor/Documents/Git/Medical.Office.SqlLocalDB/Medical.Office.SqlLocalDB/ConfigurationTables/POS/Sales.sql,/Users/raptor/Documents/Git/Medical.Office.SqlLocalDB/Medical.Office.SqlLocalDB/ConfigurationTables/POS/SalesPromotions.sql,/Users/raptor/Documents/Git/Medical.Office.SqlLocalDB/Medical.Office.SqlLocalDB/ConfigurationTables/POS/SaleStatuses.sql,/Users/raptor/Documents/Git/Medical.Office.SqlLocalDB/Medical.Office.SqlLocalDB/ConfigurationTables/Views/TodayInLettersView.sql,/Users/raptor/Documents/Git/Medical.Office.SqlLocalDB/Medical.Office.SqlLocalDB/Dapper Crear entidades para el Mapeo de Dapper.sql,/Users/raptor/Documents/Git/Medical.Office.SqlLocalDB/Medical.Office.SqlLocalDB/Dapper Crear Records para el Mapeo de Entidades.sql,/Users/raptor/Documents/Git/Medical.Office.SqlLocalDB/Medical.Office.SqlLocalDB/PatientData.sql,/Users/raptor/Documents/Git/Medical.Office.SqlLocalDB/Medical.Office.SqlLocalDB/ProductionTables/ExpressPos/Tables/Cortes.sql,/Users/raptor/Documents/Git/Medical.Office.SqlLocalDB/Medical.Office.SqlLocalDB/ProductionTables/ExpressPos/Tables/DetalleVentas.sql,/Users/raptor/Documents/Git/Medical.Office.SqlLocalDB/Medical.Office.SqlLocalDB/ProductionTables/ExpressPos/Tables/Productos.sql,/Users/raptor/Documents/Git/Medical.Office.SqlLocalDB/Medical.Office.SqlLocalDB/ProductionTables/ExpressPos/Tables/Ventas.sql,/Users/raptor/Documents/Git/Medical.Office.SqlLocalDB/Medical.Office.SqlLocalDB/ProductionTables/ExpressPos/Views/DetalleDeVentas.sql,/Users/raptor/Documents/Git/Medical.Office.SqlLocalDB/Medical.Office.SqlLocalDB/ProductionTables/ExpressPos/Views/VentasPorDia.sql,/Users/raptor/Documents/Git/Medical.Office.SqlLocalDB/Medical.Office.SqlLocalDB/UtcTime/GlobalSettings.sql,/Users/raptor/Documents/Git/Medical.Office.SqlLocalDB/Medical.Office.SqlLocalDB/UtcTime/UfnToLocalTime.sql,/Users/raptor/Documents/Git/Medical.Office.SqlLocalDB/Medical.Office.SqlLocalDB/UtcTime/UfnToUniversalTime.sql]</TargetScripts>
+      <Dsp>160</Dsp>
+      <FolderStructure>SchemaObjectType</FolderStructure>
     </ProjectBasedModelProvider>
   </SourceModelProvider>
   <TargetModelProvider>
     <ConnectionBasedModelProvider>
-      <ConnectionString>Data Source=localhost,1433;Initial Catalog=Medical.Office.SqlLocalDB;Persist Security Info=True;User ID=sa;Pooling=False;Multiple Active Result Sets=False;Connect Timeout=60;Encrypt=True;Trust Server Certificate=True;Command Timeout=0</ConnectionString>
+      <ConnectionString>Data Source=localhost,1433;Initial Catalog=Medical.Office.SqlLocalDB;User ID=sa;Connect Timeout=30;Encrypt=True;Trust Server Certificate=True;Authentication=SqlPassword;Application Name=azdata;Command Timeout=30</ConnectionString>
     </ConnectionBasedModelProvider>
   </TargetModelProvider>
   <SchemaCompareSettingsService>
@@ -30,7 +32,7 @@
       </PropertyElementName>
       <PropertyElementName>
         <Name>AllowIncompatiblePlatform</Name>
-        <Value>False</Value>
+        <Value>True</Value>
       </PropertyElementName>
       <PropertyElementName>
         <Name>AllowTableRecreation</Name>
@@ -50,7 +52,7 @@
       </PropertyElementName>
       <PropertyElementName>
         <Name>BlockWhenDriftDetected</Name>
-        <Value>False</Value>
+        <Value>True</Value>
       </PropertyElementName>
       <PropertyElementName>
         <Name>CompareUsingTargetCollation</Name>
@@ -106,7 +108,7 @@
       </PropertyElementName>
       <PropertyElementName>
         <Name>DropPermissionsNotInSource</Name>
-        <Value>False</Value>
+        <Value>True</Value>
       </PropertyElementName>
       <PropertyElementName>
         <Name>DropObjectsNotInSource</Name>
@@ -114,7 +116,7 @@
       </PropertyElementName>
       <PropertyElementName>
         <Name>DropRoleMembersNotInSource</Name>
-        <Value>False</Value>
+        <Value>True</Value>
       </PropertyElementName>
       <PropertyElementName>
         <Name>DropStatisticsNotInSource</Name>
@@ -166,11 +168,11 @@
       </PropertyElementName>
       <PropertyElementName>
         <Name>IgnoreKeywordCasing</Name>
-        <Value>True</Value>
+        <Value>False</Value>
       </PropertyElementName>
       <PropertyElementName>
         <Name>IgnoreSemicolonBetweenStatements</Name>
-        <Value>True</Value>
+        <Value>False</Value>
       </PropertyElementName>
       <PropertyElementName>
         <Name>IgnorePartitionSchemes</Name>
@@ -326,7 +328,7 @@
       </PropertyElementName>
       <PropertyElementName>
         <Name>ScriptDatabaseOptions</Name>
-        <Value>False</Value>
+        <Value>True</Value>
       </PropertyElementName>
       <PropertyElementName>
         <Name>ScriptDeployStateChecks</Name>
@@ -350,7 +352,7 @@
       </PropertyElementName>
       <PropertyElementName>
         <Name>TargetConnectionString</Name>
-        <Value>Data Source=localhost,1433;Initial Catalog=Medical.Office.SqlLocalDB;Persist Security Info=True;User ID=sa;Pooling=False;Multiple Active Result Sets=False;Connect Timeout=60;Encrypt=True;Trust Server Certificate=True;Application Name="Microsoft SQL Server Data Tools, Schema Compare";Command Timeout=0</Value>
+        <Value>Integrated Security=True;Pooling=False;Connect Timeout=30</Value>
       </PropertyElementName>
       <PropertyElementName>
         <Name>TreatVerificationErrorsAsWarnings</Name>
@@ -374,7 +376,7 @@
       </PropertyElementName>
       <PropertyElementName>
         <Name>AllowDropBlockingAssemblies</Name>
-        <Value>False</Value>
+        <Value>True</Value>
       </PropertyElementName>
       <PropertyElementName>
         <Name>DoNotEvaluateSqlCmdVariables</Name>
@@ -746,7 +748,7 @@
       </PropertyElementName>
       <PropertyElementName>
         <Name>ExcludeEventNotifications</Name>
-        <Value>False</Value>
+        <Value>True</Value>
       </PropertyElementName>
       <PropertyElementName>
         <Name>ExcludeExternalDataSources</Name>
@@ -1001,7 +1003,23 @@
         <Value>ExcludedType</Value>
       </PropertyElementName>
       <PropertyElementName>
+        <Name>Microsoft.Data.Tools.Schema.Sql.SchemaModel.SqlDatabaseEventSession</Name>
+        <Value>ExcludedType</Value>
+      </PropertyElementName>
+      <PropertyElementName>
         <Name>Microsoft.Data.Tools.Schema.Sql.SchemaModel.SqlDatabaseOptions</Name>
+        <Value>ExcludedType</Value>
+      </PropertyElementName>
+      <PropertyElementName>
+        <Name>Microsoft.Data.Tools.Schema.Sql.SchemaModel.SqlServerEventNotification</Name>
+        <Value>ExcludedType</Value>
+      </PropertyElementName>
+      <PropertyElementName>
+        <Name>Microsoft.Data.Tools.Schema.Sql.SchemaModel.SqlDatabaseEventNotification</Name>
+        <Value>ExcludedType</Value>
+      </PropertyElementName>
+      <PropertyElementName>
+        <Name>Microsoft.Data.Tools.Schema.Sql.SchemaModel.SqlQueueEventNotification</Name>
         <Value>ExcludedType</Value>
       </PropertyElementName>
       <PropertyElementName>
@@ -1010,10 +1028,6 @@
       </PropertyElementName>
       <PropertyElementName>
         <Name>Microsoft.Data.Tools.Schema.Sql.SchemaModel.SqlServerRoleMembership</Name>
-        <Value>ExcludedType</Value>
-      </PropertyElementName>
-      <PropertyElementName>
-        <Name>Microsoft.Data.Tools.Schema.Sql.SchemaModel.SqlDatabaseEventSession</Name>
         <Value>ExcludedType</Value>
       </PropertyElementName>
       <PropertyElementName>
