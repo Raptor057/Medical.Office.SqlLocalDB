@@ -74,6 +74,7 @@
   </ItemGroup>
   <ItemGroup>
     <Build Include="ConfigurationTables\MedicalOffice\ConsultingTime.sql" />
+    <Build Include="ConfigurationTables\MedicalOffice\PatientAdvancement.sql" />
     <Build Include="ConfigurationTables\MedicalOffice\TypeOfAppointment.sql" />
     <Build Include="ConfigurationTables\POS\InventoryMovements.sql" />
     <Build Include="ConfigurationTables\POS\PaymentTypes.sql" />
