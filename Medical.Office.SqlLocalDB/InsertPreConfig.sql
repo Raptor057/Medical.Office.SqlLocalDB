@@ -153,17 +153,27 @@ INSERT INTO DaysTranslation (DayInEnglish, DayInSpanish)
 SELECT 'sunday', 'domingo'
 WHERE NOT EXISTS (SELECT 1 FROM DaysTranslation WHERE DayInEnglish = 'sunday');
 
+-- Para la tabla TypeOfAppointment
 INSERT INTO TypeOfAppointment (NameTypeOfAppointment)
-SELECT 'Consulta' WHERE NOT EXISTS (SELECT 1 FROM Specialties WHERE Specialty = 'Consulta');
+SELECT 'Consulta' WHERE NOT EXISTS (
+    SELECT 1 FROM TypeOfAppointment WHERE NameTypeOfAppointment = 'Consulta'
+);
 
 INSERT INTO TypeOfAppointment (NameTypeOfAppointment)
-SELECT 'Pre Operatorio' WHERE NOT EXISTS (SELECT 1 FROM Specialties WHERE Specialty = 'Pre Operatorio');
+SELECT 'Pre Operatorio' WHERE NOT EXISTS (
+    SELECT 1 FROM TypeOfAppointment WHERE NameTypeOfAppointment = 'Pre Operatorio'
+);
 
 INSERT INTO TypeOfAppointment (NameTypeOfAppointment)
-SELECT 'Post Operatorio' WHERE NOT EXISTS (SELECT 1 FROM Specialties WHERE Specialty = 'Post Operatorio');
+SELECT 'Post Operatorio' WHERE NOT EXISTS (
+    SELECT 1 FROM TypeOfAppointment WHERE NameTypeOfAppointment = 'Post Operatorio'
+);
 
 INSERT INTO TypeOfAppointment (NameTypeOfAppointment)
-SELECT 'Otros' WHERE NOT EXISTS (SELECT 1 FROM Specialties WHERE Specialty = 'Otros');
+SELECT 'Otros' WHERE NOT EXISTS (
+    SELECT 1 FROM TypeOfAppointment WHERE NameTypeOfAppointment = 'Otros'
+);
+
 
 INSERT INTO ConsultingTime(MedicalConsultationMinutesForPatients)
 SELECT 30 WHERE NOT EXISTS (SELECT 1 FROM ConsultingTime WHERE MedicalConsultationMinutesForPatients = 30)
