@@ -55,6 +55,7 @@
   <Import Condition="'$(NetCoreBuild)' != 'true' AND '$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <Import Condition="'$(NetCoreBuild)' != 'true' AND '$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
+    <Folder Include="ConfigurationTables\MedicalOffice\Prescription" />
     <Folder Include="ProductionTables\ExpressPos" />
     <Folder Include="ProductionTables\ExpressPos\Tables" />
     <Folder Include="ProductionTables\ExpressPos\Views" />
@@ -75,6 +76,14 @@
   <ItemGroup>
     <Build Include="ConfigurationTables\MedicalOffice\ConsultingTime.sql" />
     <Build Include="ConfigurationTables\MedicalOffice\PatientAdvancement.sql" />
+    <Build Include="ConfigurationTables\MedicalOffice\Prescription\PatientConsultationCharges.sql" />
+    <Build Include="ConfigurationTables\MedicalOffice\Prescription\PatientDiagnostics.sql" />
+    <Build Include="ConfigurationTables\MedicalOffice\Prescription\PatientLaboratoryAndImagingRequests.sql" />
+    <Build Include="ConfigurationTables\MedicalOffice\Prescription\PatientMedicalInstructions.sql" />
+    <Build Include="ConfigurationTables\MedicalOffice\Prescription\PatientMedicalProcedures.sql" />
+    <Build Include="ConfigurationTables\MedicalOffice\Prescription\PatientPrescription.sql" />
+    <Build Include="ConfigurationTables\MedicalOffice\Prescription\PatientPrescriptionOfMedications.sql" />
+    <Build Include="ConfigurationTables\MedicalOffice\Prescription\PatientTreatmentPlan.sql" />
     <Build Include="ConfigurationTables\MedicalOffice\TypeOfAppointment.sql" />
     <Build Include="ConfigurationTables\POS\InventoryMovements.sql" />
     <Build Include="ConfigurationTables\POS\PaymentTypes.sql" />
