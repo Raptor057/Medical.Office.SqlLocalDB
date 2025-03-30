@@ -2,9 +2,10 @@ name: Build and Push SQL Image to GHCR
 
 on:
   workflow_run:
-    workflows: ["Build DACPAC"]
+    workflows: ["Build DACPAC"]  # 👈 debe coincidir EXACTAMENTE con el name del otro yml
     types:
       - completed
+  workflow_dispatch:  # 👈 Esto te deja lanzarlo desde GitHub Actions manualmente
 
 jobs:
   build-and-push-image:

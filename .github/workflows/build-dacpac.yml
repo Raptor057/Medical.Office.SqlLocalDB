@@ -1,14 +1,21 @@
 name: Build DACPAC
 
 on:
+  workflow_call:
+    outputs:
+      dacpac-path:
+        description: "Path of the generated dacpac"
+        value: ${{ jobs.build-dacpac.outputs.dacpac-path }}
+  workflow_dispatch:
   push:
     branches:
       - main
-  workflow_dispatch:
 
 jobs:
   build-dacpac:
     runs-on: windows-latest
+    outputs:
+      dacpac-path: ${{ steps.upload.outputs.dacpac-path }}
 
     steps:
       - name: Checkout repo
@@ -22,10 +29,8 @@ jobs:
           msbuild Medical.Office.SqlLocalDB/Medical.Office.SqlLocalDB.sqlproj /p:Configuration=Release
 
       - name: Upload DACPAC as artifact
+        id: upload
         uses: actions/upload-artifact@v4
         with:
           name: dacpac
           path: Medical.Office.SqlLocalDB/bin/Release/*.dacpac
-          retention-days: 1
-          if-no-files-found: error
-
