@@ -19,6 +19,6 @@ CREATE TABLE [dbo].[PatientPrescription]
     HeadCircumference DECIMAL(5,2) NULL, -- en cm
     OxygenSaturation DECIMAL(5,2) NULL, -- %
     -- Metadata
-    CreatedAt TIMESTAMP DEFAULT GETUTCDATE(),
-    UpdatedAt TIMESTAMP DEFAULT GETUTCDATE()
+    CreatedAt DATETIME DEFAULT GETUTCDATE(),
+    UpdatedAt DATETIME DEFAULT GETUTCDATE()
 )

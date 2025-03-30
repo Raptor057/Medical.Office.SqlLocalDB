@@ -19,19 +19,34 @@
 # # Comando para iniciar SQL Server
 # CMD /opt/mssql/bin/sqlservr
 
+
 FROM mcr.microsoft.com/mssql/server:2022-latest
 
 ENV ACCEPT_EULA=Y
 ENV MSSQL_SA_PASSWORD=Cbmwjmkq23
 ENV MSSQL_PID=Express
 
-WORKDIR /publish
-COPY publish-db.sh .
-COPY Medical.Office.SqlLocalDB.dacpac .
+USER root
 
-RUN chmod +x publish-db.sh
+# Copiar zip ya descargado
+#COPY sqlpackage.zip /tmp/sqlpackage.zip
+COPY sqlpackage-linux-x64-en-162.5.57.1.zip /tmp/sqlpackage.zip
+
+# Instalar dependencias y descomprimir sqlpackage
+RUN apt-get update && \
+    apt-get install -y unzip libunwind8 netcat && \
+    #apt-get install -y unzip libunwind8 && \
+    unzip /tmp/sqlpackage.zip -d /opt/sqlpackage && \
+    chmod +x /opt/sqlpackage/sqlpackage && \
+    ln -s /opt/sqlpackage/sqlpackage /usr/bin/sqlpackage
+
+USER mssql
+
+WORKDIR /publish
+
+COPY --chmod=755 publish-db.sh .
+COPY Medical.Office.SqlLocalDB.dacpac .
 
 EXPOSE 1433
 
-CMD ["/bin/bash", "/publish/publish-db.sh"]
-
+CMD ["/bin/bash", "./publish-db.sh"]
