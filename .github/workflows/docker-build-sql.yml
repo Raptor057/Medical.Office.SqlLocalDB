@@ -6,12 +6,10 @@ on:
       - main
 
 jobs:
-  build-and-push:
+  build-dacpac:
     runs-on: windows-latest
-
-    permissions:
-      contents: read
-      packages: write
+    outputs:
+      dacpac-path: ${{ steps.upload.outputs.dacpac-path }}
 
     steps:
       - name: Checkout repo
@@ -24,9 +22,30 @@ jobs:
         run: |
           msbuild Medical.Office.SqlLocalDB/Medical.Office.SqlLocalDB.sqlproj /p:Configuration=Release
 
-      - name: Copy DACPAC to Docker context
-        run: |
-          Copy-Item -Path Medical.Office.SqlLocalDB\bin\Release\*.dacpac -Destination Medical.Office.SqlLocalDB\
+      - name: Upload built DACPAC artifact
+        id: upload
+        uses: actions/upload-artifact@v4
+        with:
+          name: dacpac
+          path: Medical.Office.SqlLocalDB/bin/Release/*.dacpac
+
+  build-and-push-image:
+    needs: build-dacpac
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+      packages: write
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Download DACPAC artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: dacpac
+          path: Medical.Office.SqlLocalDB/
 
       - name: Setup Docker Buildx
         uses: docker/setup-buildx-action@v3
