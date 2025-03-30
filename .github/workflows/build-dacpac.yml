@@ -1,11 +1,10 @@
 name: Build DACPAC
 
 on:
-  workflow_call:
-  workflow_dispatch:
   push:
     branches:
       - main
+  workflow_dispatch:
 
 jobs:
   build-dacpac:
