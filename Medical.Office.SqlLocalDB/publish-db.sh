@@ -18,7 +18,7 @@ echo "🚀 Publicando la base de datos..."
   /TargetDatabaseName:MedicalOffice \
   /TargetUser:sa \
   /TargetPassword:$MSSQL_SA_PASSWORD \
-  /p:TargetDatabaseName=Medical.Office.SqlLocalDB \
+  /TargetDatabaseName:"Medical.Office.SqlLocalDB" \
   /TargetEncryptConnection:False \
   /TargetTrustServerCertificate:True \
   /p:DropObjectsNotInSource=True \
