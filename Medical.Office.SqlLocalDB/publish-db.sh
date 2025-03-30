@@ -15,10 +15,9 @@ echo "🚀 Publicando la base de datos..."
   /Action:Publish \
   /SourceFile:/publish/Medical.Office.SqlLocalDB.dacpac \
   /TargetServerName:localhost \
-  /TargetDatabaseName:MedicalOffice \
+  /TargetDatabaseName:"Medical.Office.SqlLocalDB" \
   /TargetUser:sa \
   /TargetPassword:$MSSQL_SA_PASSWORD \
-  /TargetDatabaseName:"Medical.Office.SqlLocalDB" \
   /TargetEncryptConnection:False \
   /TargetTrustServerCertificate:True \
   /p:DropObjectsNotInSource=True \
