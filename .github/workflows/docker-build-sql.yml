@@ -1,36 +1,13 @@
 name: Build and Push SQL Image to GHCR
 
 on:
-  push:
-    branches:
-      - main
+  workflow_run:
+    workflows: ["Build DACPAC"]
+    types:
+      - completed
 
 jobs:
-  build-dacpac:
-    runs-on: windows-latest
-    outputs:
-      dacpac-path: ${{ steps.upload.outputs.dacpac-path }}
-
-    steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
-
-      - name: Setup MSBuild
-        uses: microsoft/setup-msbuild@v1.3
-
-      - name: Build DACPAC with MSBuild
-        run: |
-          msbuild Medical.Office.SqlLocalDB/Medical.Office.SqlLocalDB.sqlproj /p:Configuration=Release
-
-      - name: Upload built DACPAC artifact
-        id: upload
-        uses: actions/upload-artifact@v4
-        with:
-          name: dacpac
-          path: Medical.Office.SqlLocalDB/bin/Release/*.dacpac
-
   build-and-push-image:
-    needs: build-dacpac
     runs-on: ubuntu-latest
 
     permissions:

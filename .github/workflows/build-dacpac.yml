@@ -1,0 +1,29 @@
+name: Build DACPAC
+
+on:
+  workflow_call:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-dacpac:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup MSBuild
+        uses: microsoft/setup-msbuild@v1.3
+
+      - name: Build DACPAC
+        run: |
+          msbuild Medical.Office.SqlLocalDB/Medical.Office.SqlLocalDB.sqlproj /p:Configuration=Release
+
+      - name: Upload DACPAC as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: dacpac
+          path: Medical.Office.SqlLocalDB/bin/Release/*.dacpac
