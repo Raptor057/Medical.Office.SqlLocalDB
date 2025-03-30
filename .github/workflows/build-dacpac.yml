@@ -21,10 +21,11 @@ jobs:
         run: |
           msbuild Medical.Office.SqlLocalDB/Medical.Office.SqlLocalDB.sqlproj /p:Configuration=Release
 
-          - name: Upload DACPAC as artifact
-          uses: actions/upload-artifact@v4
-          with:
-            name: dacpac
-            path: Medical.Office.SqlLocalDB/bin/Release/*.dacpac
-            retention-days: 1
-            if-no-files-found: error
+      - name: Upload DACPAC as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: dacpac
+          path: Medical.Office.SqlLocalDB/bin/Release/*.dacpac
+          retention-days: 1
+          if-no-files-found: error
+
